@@ -1,6 +1,8 @@
 # Attendance-System-Model
  This project detects students in a classroom, marks their attendance, and also recognizes their emotions.   Attendance is only marked within a specific time window (default: 09:30–10:00 AM).   Results are stored in a CSV file.
-## 📂 Project Structure
+ ---
+ 
+##  Project Structure
 
 - `data/faces_dataset/` → Student face dataset (5+ images per student)
 - `models/` → Trained models (`face_id_svc.joblib`, `label_encoder.joblib`, `emotion_model_arch.json`, `emotion_model_weights.h5`)
@@ -11,7 +13,7 @@
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 1. Install dependencies:
    ```bash
