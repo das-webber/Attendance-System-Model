@@ -45,3 +45,30 @@ You can download them here:
 - [Download model.weights.h5 (Google Drive)]((https://drive.google.com/file/d/1CWN2ZbszU09mcc9TKfzS7T_5qmdMC9Iz/view?usp=drive_link))
 
 And place this trained weighted file in models directory
+---
+Repository Structure
+
+attendance-system/
+│
+├── data/
+│   └── faces_dataset/                # student images dataset (real faces required)
+│       ├── 001_Student1/
+│       │   ├── img1.jpg
+│       │   ├── img2.jpg
+│       ├── 002_Student2/
+│       │   ├── img1.jpg
+│       │   ├── img2.jpg
+│       └── ...
+│
+├── models/
+│   ├── face_id_svc.joblib            # trained SVM model (face recognition)
+│   ├── label_encoder.joblib          # trained label encoder
+│   ├── emotion_model_arch.json       # emotion model architecture
+│   ├── emotion_model_weights.h5      # emotion model weights
+│
+├── config.py                         # configuration paths
+├── train_face_id.py                  # train face recognition model
+├── run_attendance.py                 # main attendance system (face + emotion + csv)
+├── requirements.txt                  # dependencies
+└── README.md                         # documentation
+
